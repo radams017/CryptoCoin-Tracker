@@ -13,22 +13,17 @@ function getNews() {
     httpRQ.onload = function () {
         var data = JSON.parse(httpRQ.response);
 
-        story1.textContent = data.results[0].title
-        story2.textContent = data.results[1].title
-        story3.textContent = data.results[2].title
-        story4.textContent = data.results[3].title
-        story5.textContent = data.results[4].title
+        story1.textContent = data.results[0].title;
+        story2.textContent = data.results[1].title;
+        story3.textContent = data.results[2].title;
+        story4.textContent = data.results[3].title;
+        story5.textContent = data.results[4].title;
 
-        story1.setAttribute("href", data.results[0].link)
-        story2.setAttribute("href", data.results[1].link)
-        story3.setAttribute("href", data.results[2].link)
-        story4.setAttribute("href", data.results[3].link)
-        story5.setAttribute("href", data.results[4].link)
-
-        for (i = 0; i < data.results.length; i++) {
-            console.log(data.results[i].title);
-            console.log(data.results[i].link);
-        }
+        story1.setAttribute("href", data.results[0].link);
+        story2.setAttribute("href", data.results[1].link);
+        story3.setAttribute("href", data.results[2].link);
+        story4.setAttribute("href", data.results[3].link);
+        story5.setAttribute("href", data.results[4].link);
 
     };
 
