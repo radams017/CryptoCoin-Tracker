@@ -8,7 +8,7 @@ var story5 = document.getElementById("story5");
 function getNews() {
     var httpRQ = new XMLHttpRequest();
 
-    httpRQ.open('GET', 'https://newsdata.io/api/1/news?apikey=pub_381b5930794fc58a9ddf44f4d6585994a39&country=us&language=en')
+    httpRQ.open('GET', 'https://newsdata.io/api/1/news?apikey=pub_381b5930794fc58a9ddf44f4d6585994a39&country=us&language=en&q=Cryptocurrency')
 
     httpRQ.onload = function () {
         var data = JSON.parse(httpRQ.response);
