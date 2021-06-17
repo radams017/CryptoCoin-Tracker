@@ -1,0 +1,39 @@
+.navbar {
+    background-color: black;
+    height: 90px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color:grey
+}
+
+.flex-container {
+    font-size: xx-large;
+    color:grey;
+}
+
+.coins {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form {
+    display:flex;
+    justify-content: center;
+    font-size: x-large;
+}
+
+email {
+    height: 30px;
+    width: 30rem;
+}
+
+submit {
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    
+}
