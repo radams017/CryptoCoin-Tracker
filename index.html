@@ -4,84 +4,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
-        integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" rel="stylesheet">
 
-     
+
+
 
     <title>Coin Professor</title>
 
 </head>
 
+
 <body>
-    <div>
-        <nav class="bg-gray-800">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="flex items-center justify-between h-16">
-                    <div class="flex items-center">
-                        <div class="flex-shrink-0">
-                            <span class="">Coin Professor</span>
 
-                        </div>
-                        <div class="ml-10 flex items-baseline space-x-4">
-                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="#" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium">Home</a>
+    <div class="ui center aligned container">
+        <h1>Welcome to Coin Professor</h1>
+
+        <!--Buttons-->
+        <div class="ui center aligned basic segment">
+            <div class="ui buttons">
+
+                <button class="ui black button">Home</button>
+                <button class="ui black button">Popular Currencies</button>
+                <button class="ui black button">Top News</button>
+            </div>
 
 
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Team</a>
+        </div>
+        <hr>
+        <br> <br>
 
-                            <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+        <div class="ui center aligned basic segment">
+            <div class="ui left icon action input">
+                <i class="search icon"></i>
+                <input type="text" placeholder="Type your currency">
+                <div class="ui black submit button">Search</div>
+            </div>
 
-                        </div>
-                    </div>
+            <div>
+                <div>
+                    <h2>Top Stories</h2>
+                    <ul id="topStoriesList">
+                        <li><a id="story1"></a></li>
+                        <li><a id="story2"></a></li>
+                        <li><a id="story3"></a></li>
+                        <li><a id="story4"></a></li>
+                        <li><a id="story5"></a></li>
+                    </ul>
                 </div>
             </div>
-
+        </div>
 
     </div>
-    </nav>
-
-    <header class="bg-white shadow">
-        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
-            <h1 class="text-3xl font-bold text-gray-900 text-center">
-                Welcome To Coin Professor!
-            </h1>
-        </div>
-    </header>
-    <main>
-        <div class="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-            <h2>Popular Currencies</h2>
-
-            <button><a href="#">Bitcoin</a></button>
-            <button><a href="#">Dogecoin</a></button>
-            <button><a href="#">Etherium</a></button>
-
-
-        </div>
-
-        <div>
-            <div>
-                <h2>Top Stories</h2>
-                <ul id="topStoriesList">
-                    <li><a id="story1"></a></li>
-                    <li><a id="story2"></a></li>
-                    <li><a id="story3"></a></li>
-                    <li><a id="story4"></a></li>
-                    <li><a id="story5"></a></li>
-                </ul>
-            </div>
-        </div>
-    </main>
-    </div>
-
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="./assets/script.js"></script>
     <script src="./assets/news.js"></script>
 </body>
 
-</html>
+<script ref="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
 
+</html>
