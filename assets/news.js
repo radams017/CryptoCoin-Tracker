@@ -27,5 +27,6 @@ function getNews() {
 
     httpRQ.send();
 }
+
 getNews();
 
