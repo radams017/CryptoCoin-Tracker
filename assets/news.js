@@ -1,4 +1,3 @@
-var topStories = document.getElementById("topStoriesList");
 var story1 = document.getElementById("story1");
 var story2 = document.getElementById("story2");
 var story3 = document.getElementById("story3");
@@ -11,7 +10,6 @@ function getNews() {
     httpRQ.open('GET', 'https://newsapi.org/v2/everything?q=crypto&language=en&from=2021-06-01&apiKey=c25691dd0dd4443f89cab34c230a7ced')
     httpRQ.onload = function () {
         var data = JSON.parse(httpRQ.response);
-        console.log(data)
 
         story1.textContent = data.articles[0].title;
         story2.textContent = data.articles[1].title;
@@ -24,7 +22,6 @@ function getNews() {
         story3.setAttribute("href", data.articles[2].url);
         story4.setAttribute("href", data.articles[3].url);
         story5.setAttribute("href", data.articles[4].url);
-
     };
 
     httpRQ.send();
