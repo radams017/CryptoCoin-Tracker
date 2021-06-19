@@ -1,4 +1,4 @@
-const coinList = [
+const coinsArray = [
   {
     "id": "01coin",
     "symbol": "zoc",
