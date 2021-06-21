@@ -1,6 +1,6 @@
 $(function () {
-
     let coinsVal = $('#coins');
+
 
     const coinsNamesArray = coinsArray.map(function (item) {
         return item.name;
@@ -17,14 +17,15 @@ $(function () {
         let coinId = findItemId(coinsVal.val());
         console.log(coinId);
         coinsVal.val('');
-        getCoinData(coinId)
+        coinObj = getCoinData(coinId)
+        console.log(coinObj.val())
     });
 
     //handle currency form submission
     $('#currency-select').submit((e) => {
         e.preventDefault();
         let selectedCurrency = $('#currencies').val();
-        console.log(selectedCurrency);
+        saveVsCurrency(selectedCurrency);
     })
 
     //captures submission ID
@@ -55,5 +56,18 @@ $(function () {
             });
     };
 
-    getCurrencyOptions()
+    //get seven trending currencies
+    function getTrendingCurrency() {
+        let apiURL = 'https://api.coingecko.com/api/v3/search/trending'
+        fetch(apiURL)
+            .then(response => response.json())
+            .then(data => console.log(data))
+    }
+
+    function saveVsCurrency(VsChoice) {
+        localStorage.setItem('VsCurrency', VsChoice)
+    }
+
+    getTrendingCurrency();
+    getCurrencyOptions();
 });

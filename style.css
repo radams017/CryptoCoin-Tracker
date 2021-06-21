@@ -3,15 +3,16 @@
     height: 90px;
 }
 
-h2 {
-    display: flex;
-    justify-content: center;
-    color:grey
+.ui-autocomplete {
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
+
 
 .flex-container {
     font-size: xx-large;
-    color:grey;
+    color: grey;
 }
 
 .coins {
@@ -20,7 +21,7 @@ h2 {
 }
 
 .form {
-    display:flex;
+    display: flex;
     justify-content: center;
     font-size: x-large;
 }
@@ -35,5 +36,5 @@ submit {
     height: 40px;
     display: flex;
     justify-content: center;
-    
+
 }
