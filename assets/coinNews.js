@@ -1,7 +1,9 @@
 var story1 = "#"
 var story2 = "#"
 var story3 = "#"
-var currency = "#"
+var currency = localStorage.getItem('VsCurrency');
+console.log(currency)
+
 function getNews() {
     var httpRQ = new XMLHttpRequest();
 

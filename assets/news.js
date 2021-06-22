@@ -5,6 +5,11 @@ var story4 = document.getElementById("story4");
 var story5 = document.getElementById("story5");
 
 function getNews() {
+    var story1 = document.getElementById("story1");
+    var story2 = document.getElementById("story2");
+    var story3 = document.getElementById("story3");
+    var story4 = document.getElementById("story4");
+    var story5 = document.getElementById("story5");
     var httpRQ = new XMLHttpRequest();
 
     httpRQ.open('GET', "https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/search/NewsSearchAPI?q=crypto&pageNumber=1&pageSize=6&autoCorrect=true&safeSearch=true&fromPublishedDate=2021-06-01&toPublishedDate=null");
@@ -23,6 +28,12 @@ function getNews() {
         story3.setAttribute("href", data.value[3].url);
         story4.setAttribute("href", data.value[4].url);
         story5.setAttribute("href", data.value[5].url);
+
+        story1.setAttribute("target", '_blank');
+        story2.setAttribute("target", '_blank');
+        story3.setAttribute("target", '_blank');
+        story4.setAttribute("target", '_blank');
+        story5.setAttribute("target", '_blank');
     };
 
     httpRQ.send();
