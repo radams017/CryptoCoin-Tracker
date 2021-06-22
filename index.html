@@ -16,13 +16,12 @@
     <div class="ui center aligned container">
         <div class="ui center aligned basic segment">
             <div class="ui buttons">
-                <button class="ui black button">Home</button>
+                <button id='home' class="ui black button">Home</button>
                 <button onclick="window.location.href='./resources.html'" class=" ui black button">Resources</button>
-                <button class="ui black button">Top Stories</button>
             </div>
         </div>
         <h1>Welcome to DeFi 101!</h1>
-        <h3>DeFi 101 is a stripped down cryptocurrency tracker made for the new entrant into the world of decentralized
+        <h3>DeFi 101 is a stripped down cryptocurrency tracker made for the new entrant in the world of decentralized
             finance.</h3>
         <p>Not sure how to navigate the extremely detailed cryptocurrency sites of the world? Just looking up the price
             of a coin?
@@ -60,14 +59,17 @@
                 <h2>Choose A Coin!</h2>
             </div>
             <div>
+                </br></br></br></br></br>
+                <hr>
                 <div>
                     <h2>Top Stories</h2>
+                    <p>Learn More About The Events Happening In The DeFi World.</p>
                     <ul id="topStoriesList">
-                        <li><a id="story1"></a></li>
-                        <li><a id="story2"></a></li>
-                        <li><a id="story3"></a></li>
-                        <li><a id="story4"></a></li>
-                        <li><a id="story5"></a></li>
+                        <li><a class='storyList' id="story1"></a></li>
+                        <li><a class='storyList' id="story2"></a></li>
+                        <li><a class='storyList' id="story3"></a></li>
+                        <li><a class='storyList' id="story4"></a></li>
+                        <li><a class='storyList' id="story5"></a></li>
                     </ul>
                 </div>
             </div>
@@ -80,7 +82,7 @@
     <script ref="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <script src="./assets/coin_list.js"></script>
     <script src="./assets/script.js"></script>
-    <!-- <script src="./assets/news.js"></script> -->
+    <script src="./assets/news.js"></script>
 </body>
 
 

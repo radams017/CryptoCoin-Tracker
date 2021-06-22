@@ -117,7 +117,7 @@ $(function () {
                     <h1 id='current-coin'>${coin.name}</h1>
                 </div>
                 <div class='column'>
-                    <h2 id='comparison-currency'>Vs. Currency: ${vsCurrency}</h2>
+                    <h2 id='comparison-currency'>Currency: ${vsCurrency}</h2>
                 </div>
             </div>
         </div>
@@ -135,12 +135,6 @@ $(function () {
                     <h3 id='ATH'>All Time High:</h3><p>${currencySigns[currency]}${coin.market_data.ath[currency]}</p>
                     <h3 id='ATL'>All Time Low:</h3><p>${currencySigns[currency]}${coin.market_data.atl[currency]}</p>
                 </div>
-            </div>
-        </div>
-        <div class='ui grid'>
-            <div class="left floated five wide column">
-                <h2>Description</h2>
-                <p id='description'></p>
             </div>
         </div>
     </div>
@@ -170,6 +164,7 @@ $(function () {
         e.preventDefault();
         let coinId = findItemId(coinsVal.val());
         getCoinData(coinId, appendMarketData);
+        $('#coins').val('');
     });
 
     //handle currency form submission
