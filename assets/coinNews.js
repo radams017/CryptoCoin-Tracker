@@ -1,26 +1,14 @@
-<<<<<<< HEAD
-var story1 = "#"
-var story2 = "#"
-var story3 = "#"
-var currency = localStorage.getItem('VsCurrency');
-console.log(currency)
-
-function getNews() {
-    var httpRQ = new XMLHttpRequest();
-=======
 var story1 = document.getElementById("story1");
 var story2 = document.getElementById("story2");
 var story3 = document.getElementById("story3");
 var story4 = document.getElementById("story4");
 var story5 = document.getElementById("story5");
 var searchBtn = document.getElementById("searchBtn")
->>>>>>> main
 
 
 searchBtn.addEventListener("click", function getNews() {
     var currency = document.getElementById('coins').value;
-    fetch("https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/search/NewsSearchAPI?q=" + currency + "&pageNumber=1&pageSize=6&autoCorrect=true&safeSearch=true&fromPublishedDate=2021-06-01&toPublishedDate=null",
-        {
+    fetch("https://contextualwebsearch-websearch-v1.p.rapidapi.com/api/search/NewsSearchAPI?q=" + currency + "&pageNumber=1&pageSize=6&autoCorrect=true&safeSearch=true&fromPublishedDate=2021-06-01&toPublishedDate=null", {
             "method": "GET",
             "headers": {
                 "x-rapidapi-key": "31821ae77emsh5e7fa0996d8e41bp1cba9cjsn209747bed999",
@@ -46,7 +34,4 @@ searchBtn.addEventListener("click", function getNews() {
 
 });
 
-<<<<<<< HEAD
-getNews();
-=======
->>>>>>> main
+// getNews();
