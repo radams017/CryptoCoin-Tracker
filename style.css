@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
 .navbar {
     background-color: black;
     height: 90px;
@@ -9,6 +15,30 @@
     overflow-x: hidden;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    margin: 2px;
+}
+
+a:link,
+a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    background-color: green;
+    color: white;
+}
 
 .flex-container {
     font-size: xx-large;

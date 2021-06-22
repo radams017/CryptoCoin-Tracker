@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
     <link rel="stylesheet" href="./style.css">
 
-    <title>Coin Professor</title>
+    <title>DeFi 101</title>
 
 </head>
 
@@ -16,7 +16,9 @@
 <body>
 
     <div class="ui center aligned container">
-        <h1>Welcome to Coin Professor</h1>
+        <h1>Welcome to DeFi 101!</h1>
+        <h3>DeFi 101 is a stripped down cryptocurrency tracker made for the new entrant into the world of decentralized
+            finance.</h3>
 
         <!--Buttons-->
         <div class="ui center aligned basic segment">
@@ -32,22 +34,32 @@
         <hr>
         <br> <br>
 
-        <div class="ui center aligned basic segment">
-            <form id="coin-select">
-                <div class="ui left icon action input">
-                    <i class="search icon"></i>
-                    <input type="text" id="coins" placeholder="Type your coin">
-                    <button onclick="window.location.href= 'results.html'" type="submit"
-                        class="ui black submit button">Search</button>
+        <div id="main-content" class="ui center aligned basic segment">
+            <div class='ui two column grid'>
+                <div class='row'>
+                    <div class='column'>
+                        <form id="coin-select">
+                            <h2>Crypto Selection</h2>
+                            <div class="ui left icon action input">
+                                <i class="search icon"></i>
+                                <input type="text" id="coins" placeholder="Type your coin">
+                                <button type="submit" class="ui black submit button">Search</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class='column'>
+                        <form id="currency-select">
+                            <h2>Currency to Compare</h2>
+                            <div class="ui left icon action input">
+                                <i class="search icon"></i>
+                                <input type="text" id="currencies" placeholder="Type your currency">
+                                <button type="submit" class="ui black submit button">Save</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-            </form>
-            <form id="currency-select">
-                <div class="ui left icon action input">
-                    <i class="search icon"></i>
-                    <input type="text" id="currencies" placeholder="Type your currency">
-                    <button type="submit" class="ui black submit button">Search</button>
-                </div>
-            </form>
+            </div>
+            <div id="results-container"></div>
             <div>
                 <div>
                     <h2>Top Stories</h2>
@@ -69,7 +81,7 @@
     <script ref="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
     <script src="./assets/coin_list.js"></script>
     <script src="./assets/script.js"></script>
-    <script src="./assets/news.js"></script>
+    <!-- <script src="./assets/news.js"></script> -->
 </body>
 
 
