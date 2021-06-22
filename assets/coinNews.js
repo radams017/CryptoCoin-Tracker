@@ -19,7 +19,6 @@ searchBtn.addEventListener("click", function getNews() {
         .then(response => response.json())
 
         .then(data => {
-            console.log(data)
             story1.textContent = data.value[1].title;
             story2.textContent = data.value[2].title;
             story3.textContent = data.value[3].title;
