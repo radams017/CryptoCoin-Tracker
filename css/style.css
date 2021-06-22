@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&display=swap');
+
+* {
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+    background-color: black;
+    height: 90px;
+}
+
+.ui-autocomplete {
+    height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    margin: 2px;
+}
+
+a:link,
+a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    background-color: green;
+    color: white;
+}
+
+.flex-container {
+    font-size: xx-large;
+    color: grey;
+}
+
+.coins {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+}
+
+email {
+    height: 30px;
+    width: 30rem;
+}
+
+submit {
+    width: 70px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+
+}
