@@ -40,5 +40,3 @@ function getNews() {
 }
 
 getNews();
-
-//oadData()

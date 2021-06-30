@@ -19,3 +19,6 @@ https://radams017.github.io/CryptoCoin-Tracker/
 ![main app image](assets/img/main.png)
 ![top stories image](assets/img/news.png)
 ![resources image](assets/img/resources.png)
+
+## License
+MIT
